@@ -1,0 +1,180 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale = 1.0">
+    <title>Cadastros</title>
+    <link rel="stylesheet" href="css/style-3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <meta name="description" content="Site de entregas, Sistema de entregas">
+    <meta name="keywords" content="Entregas, Sistema">
+    <meta name="author" content="Marcos Rafael e Maria Eduarda">
+    <link rel="stylesheet" href="http://youtube.local/assests/dcode.css">
+    <link rel="shortcut icon" href="http://youtube.local/assests/favicon.ico">
+
+</head>
+<body>
+
+
+    <div class="teste"></div>
+
+    <!-- CARREGAMENTO !-->
+
+    <div class="loader">
+        <img src="img/loading.gif" id="loading" alt="Loading...">
+    </div> 
+
+    <script type="text/javascript">
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+        });
+    </script>
+
+    <!-- HEADER !-->
+    <div class="header">
+        <a href="menu.php"><i class="fas fa-arrow-alt-circle-left" id="size"></i></a>
+        <a href="index.php"><h2 class="logo">Entregas</h2></a>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="menu.php">Menu</a>    
+            <a href="sobrenos.html">Sobre nós</a>
+           
+            <a href="login.html">Finalizar Sessão</a>
+            <label for="chk" class="hide-menu-btn">
+            <i class="fas fa-times"></i>
+        </label>
+        </ul>
+    </div>
+
+    <!-- CARTAS !-->
+
+
+    <!-- CARTA 1 !-->
+    <div class="card middle" id="card1">
+        <div class="top-section">
+            <img src="img/clientes.jpg">
+            <div class="menuicon">
+                <span class="s1"></span>
+                <span class="s2"></span>
+            </div>
+            <div class="name">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Cliente
+                <div class="border"></div>
+            </h2>
+            <p>
+                Cadastre aqui o seu novo cliente. Dados como CNPJ, Nome do cliente, Telefone, E-mail e entre outros serão pedidos.
+            </p>
+            <h3>
+                <div class="border"></div>
+            </h3>
+            <div class="s-m">
+                <a href="cadastrarcliente.html"><button class="func-btn">Cadastrar Cliente</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARTA 2 !-->
+    <div class="card middle" id="card2">
+        <div class="top-section">
+            <img src="img/entregador.jpg">
+            <div class="menuicon">
+                <span class="s1"></span>
+                <span class="s2"></span>
+            </div>
+            <div class="name">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Entregador
+                <div class="border"></div>
+            </h2>
+            <p>
+                Cadastre aqui o seu entregador. Dados como CNH, Nome, Número da carteira e entre outros serão pedidos.
+            </p>
+            <h3>
+                <div class="border"></div>
+            </h3>
+            <div class="s-m">
+                <a href="cadastrarentregador.html"><button class="func-btn">Cadastrar Entregador</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARTA 3 
+        !-->
+    <div class="card middle" id="card3">
+        <div class="top-section">
+            <img src="img/produtos.jpg">
+            <div class="menuicon">
+                <span class="s1"></span>
+                <span class="s2"></span>
+            </div>
+            <div class="name">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Produtos
+                <div class="border"></div>
+            </h2>
+            <p>
+                Cadastre aqui o seu produto. Dados como Nome do produto, Marca, Tamanho e entre outros serão pedidos.
+            </p>
+            <h3>
+                <div class="border"></div>
+            </h3>
+            <div class="s-m">
+                <a href="cadastrarproduto.php"><button class="func-btn">Cadastrar Produto</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CARTA 4 !-->
+
+    <div class="card middle" id="card4">
+        <div class="top-section">
+            <img src="img/transportes.jpg">
+            <div class="menuicon">
+                <span class="s1"></span>
+                <span class="s2"></span>
+            </div>
+            <div class="name">
+                <span></span>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Transportes
+                <div class="border"></div>
+            </h2>
+            <p>
+                Cadastre aqui o seu novo transporte. Dados como Data de aquisição, placa do veículo e entre outros serão pedidos.
+            </p>
+            <h3>
+                <div class="border"></div>
+            </h3>
+            <div class="s-m">
+                <a href="cadastrartransporte.html"><button class="func-btn">Cadastrar Transporte</button></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
